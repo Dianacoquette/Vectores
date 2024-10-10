@@ -38,6 +38,8 @@ public class MatrizEntera {
             //num filas del matriz        //num columnas
         if (ma.length == this.tamanio &&  ma[0].length == this.ma[0].length) {
             //ciclo
+            //i = filas
+            //j = columnas
             for (int i = 0; i < this.ma.length; i++) {
                 for (int j = 0; j < this.ma[0].length; j++) {
                     //i del ciclo de afuera y j del ciclo de adentro
