@@ -60,6 +60,12 @@ public class Ejercicio5ValorMaximoMinimo {
         }
         return min;
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "el valor maximo del vector es : "+this.elementoMaximo()+"\n El elemento menor del vector es: "+this.elementoMinimo();
+    }
     
     
 }
