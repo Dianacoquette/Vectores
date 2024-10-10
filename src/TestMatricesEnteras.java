@@ -10,7 +10,9 @@ public class TestMatricesEnteras {
         MatrizEntera obj2 = new MatrizEntera(-2);
     
         MatrizEntera obj3 = new MatrizEntera(tam);
-    
+        
+       
+
     
     
         //objeto 1
@@ -25,18 +27,23 @@ public class TestMatricesEnteras {
     
         //crear matriz
     
-        int [][] ma1 = {{1,2,3},{4,5,6},{7,8,9}};
+        int [][] ma1 = {{1,2,3},
+                        {4,5,6},
+                        {7,8,9}};
+
         int [][] ma2 = {{2,3},{4,5}};
     
         obj1.setMa(ma1);
         obj2.setMa(ma2);
-      
+        
     
         System.out.println(Imprimir(ma1));
         System.out.println(Imprimir(ma2));
         //matriz 
         System.out.println(Imprimir(obj3.Matrizcu()));
-    
+
+       
+       
     
         // //matriz 1
         // for (int i = 0; i < obj1.getMa().length; i++) { //recorrer fila
