@@ -13,7 +13,7 @@ public static void main(String[] args) {
     llenarMatrices(ma2);
     m1.setM2(ma2);
     int [][] mr = m1.MultiplicarMatrices();
-    System.out.println(ImprimirResta(mr));
+    JOptionPane.showMessageDialog(null, ImprimirResta(mr));
 }
 
 public static void llenarMatrices(int [][] m){
@@ -25,7 +25,7 @@ public static void llenarMatrices(int [][] m){
 }
 
 public static String ImprimirResta(int [][] m){
-    String salida = "";
+    String salida = "";   
     for (int i = 0; i < m.length; i++) {
         salida += "[";
         for (int j = 0; j < m[0].length; j++) {

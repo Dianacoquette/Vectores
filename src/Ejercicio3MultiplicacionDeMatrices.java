@@ -4,9 +4,11 @@ public class Ejercicio3MultiplicacionDeMatrices {
     private int tamanio;
     public Ejercicio3MultiplicacionDeMatrices(int tamanio) {
         if (tamanio > 0) {
+            this.tamanio = tamanio;
             m1 = new int[tamanio][tamanio];
             m2 = new int[tamanio][tamanio];
         } else {
+            this.tamanio = 2;
             m1 = new int[2][2];
             m2 = new int[2][2];
         }

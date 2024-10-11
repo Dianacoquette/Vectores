@@ -4,9 +4,11 @@ public class Ejercicio1MatricesSuma {
     private int tamanio;
     public Ejercicio1MatricesSuma(int tamanio) {
         if (tamanio > 0) {
+            this.tamanio = tamanio;
             m1 = new int[tamanio][tamanio];
             m2 = new int[tamanio][tamanio];
         } else {
+            this.tamanio = 2;
             m1 = new int[2][2];
             m2 = new int[2][2];
         }

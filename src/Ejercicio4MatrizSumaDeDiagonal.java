@@ -4,8 +4,10 @@ public class Ejercicio4MatrizSumaDeDiagonal {
 
     public Ejercicio4MatrizSumaDeDiagonal(int tamanio){
         if (tamanio > 0) {
+            this.tamanio = tamanio;
             matriz = new int[tamanio][tamanio];
         }else{
+            this.tamanio = 2;
             matriz = new int[2][2];
         }
     }
@@ -25,6 +27,7 @@ public class Ejercicio4MatrizSumaDeDiagonal {
     public void setMatriz(int[][] matriz) {
 
         if (matriz.length == this.tamanio && matriz[0].length == this.matriz[0].length) {
+
             for (int i = 0; i < matriz.length; i++) {
                 for (int j = 0; j < matriz[0].length; j++) {
                     this.matriz[i][j] = matriz[i][j];
@@ -47,7 +50,7 @@ public class Ejercicio4MatrizSumaDeDiagonal {
             for (int j = 0; j < matriz[0].length; j++) {
                if (i == j) {
                    suma += matriz[i][j];
-    
+
                }
             }
         }

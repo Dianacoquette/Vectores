@@ -4,9 +4,11 @@ public class Ejercicio2MatricesResta {
     private int tamanio;
     public Ejercicio2MatricesResta(int tamanio) {
         if (tamanio > 0) {
+            this.tamanio = tamanio;
             m1 = new int[tamanio][tamanio];
             m2 = new int[tamanio][tamanio];
         } else {
+            this.tamanio = 2;
             m1 = new int[2][2];
             m2 = new int[2][2];
         }
@@ -58,7 +60,7 @@ public class Ejercicio2MatricesResta {
 
         for (int i = 0; i < resta.length; i++) {
             for (int j = 0; j < resta[0].length; j++) {
-                resta[i][j] = m1[i][j] + m2[i][j];
+                resta[i][j] = m1[i][j] - m2[i][j];
             }
         }
 

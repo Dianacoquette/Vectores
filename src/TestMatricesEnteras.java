@@ -3,7 +3,7 @@ public class TestMatricesEnteras {
         //pruebas de matrices
         //hacer objeto
     //nombre de clase  //identificador //constructor
-    int tam = 4;
+        int tam = 4;
         MatrizEntera obj1 = new MatrizEntera(3);
         
         //objeto 2
